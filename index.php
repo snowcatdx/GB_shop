@@ -8,5 +8,12 @@
     </head>
     <body>
         <h1>Hello world!</h1>
+        <?php
+          for ($i=1; $i <= 3; $i++) { 
+            ?>
+              Meow
+            <?
+          }
+        ?>
     </body>
 </html>
