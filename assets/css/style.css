@@ -46,12 +46,6 @@ a:hover {
     cursor: pointer;
 }
 
-@media (min-width: 576px) {
-    .menu-btn {
-        margin-right: 33px;
-    }
-}
-
 .account-link {
     width: 29px;
     height: 29px;
@@ -232,4 +226,59 @@ a:hover {
     font-size: 24px;
     text-align: center;
     color: #f16d7f;
+}
+
+.featured-box {
+    padding: 96px 0;
+}
+
+.product-card_img {
+    position: relative;
+    cursor: pointer;
+}
+
+.product-card_img .overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(58, 56, 56, 0.86);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale3d(0, 0, 0);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover .overlay {
+    transform: scale3d(1, 1, 1);
+}
+
+.product-card_btn {
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    background: url("../img/elements/cart-ico.svg") left 13px center / 26px 24px
+            no-repeat,
+        transparent;
+    height: 43px;
+    line-height: 43px;
+    padding: 0 16px 0 50px;
+}
+
+.product-card_descr {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 29px 20px 16px;
+    background: #f8f8f8;
+}
+
+.product-card_descr .title {
+    font-weight: 400;
+    font-size: 13px;
+    color: #000000;
 }
