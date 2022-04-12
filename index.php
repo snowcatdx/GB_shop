@@ -11,7 +11,7 @@
         <?php
           for ($i=1; $i <= 3; $i++) { 
             ?>
-              Meow
+              <div>Meow</div>
             <?
           }
         ?>
