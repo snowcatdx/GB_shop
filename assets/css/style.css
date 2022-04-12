@@ -5,6 +5,11 @@ body {
     line-height: 1.2;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .page-wrapper {
     display: flex;
     flex-direction: column;
@@ -67,9 +72,67 @@ body {
     padding: 0 4px;
     background: #f16d7f;
     color: #fff;
-    text-decoration: none;
     border-radius: 20px;
     position: absolute;
     top: -10px;
     right: -10px;
+}
+
+.main-menu {
+    position: fixed;
+    top: 75px;
+    right: -320px;
+    z-index: 200;
+    max-width: 232px;
+    height: calc(100vh - 75px);
+    padding: 34px;
+    background: #ffffff;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    overflow-y: auto;
+    transition: right 0.3s;
+}
+
+.main-menu.active {
+    right: 0;
+}
+
+.main-menu_title {
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 24px;
+}
+
+.close-btn {
+    display: block;
+    width: 48px;
+    height: 48px;
+    background: url("../img/elements/close-btn.svg") center center / 12px
+        no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.category-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.category-list_item {
+    font-size: 14px;
+    margin-bottom: 11px;
+    color: #6f6e6e;
+}
+
+.category-list_item.title {
+    color: #f16d7f;
+    margin: 20px 0 12px;
+}
+
+.category-list_item a:hover {
+    color: #000;
 }

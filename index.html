@@ -47,9 +47,81 @@
                         </a>
                     </div>
                 </div>
+
+                <nav class="main-menu">
+                    <span class="main-menu_title">MENU</span>
+                    <span class="close-btn"></span>
+                    <ul class="category-list">
+                        <li class="category-list_item title">
+                            <span>MAN</span>
+                        </li>
+                        <li class="category-list_item">
+                            <a href="">Accessories</a>
+                        </li>
+                        <li class="category-list_item">
+                            <a href="">Bags</a>
+                        </li>
+                        <li class="category-list_item">
+                            <a href="">Denim</a>
+                        </li>
+                        <li class="category-list_item">
+                            <a href="">T-Shirts</a>
+                        </li>
+
+                        <li class="category-list_item title">
+                            <span>WOMAN</span>
+                        </li>
+                        <li class="category-list_item">
+                            <a href="">Accessories</a>
+                        </li>
+                        <li class="category-list_item">
+                            <a href="">Jackets & Coats</a>
+                        </li>
+                        <li class="category-list_item">
+                            <a href="">Polos</a>
+                        </li>
+                        <li class="category-list_item">
+                            <a href="">T-Shirts</a>
+                        </li>
+                        <li class="category-list_item">
+                            <a href="">Shirts</a>
+                        </li>
+
+                        <li class="category-list_item title">
+                            <span>KIDS</span>
+                        </li>
+                        <li class="category-list_item">
+                            <a href="">Accessories</a>
+                        </li>
+                        <li class="category-list_item">
+                            <a href="">Jackets & Coats</a>
+                        </li>
+                        <li class="category-list_item">
+                            <a href="">Polos</a>
+                        </li>
+                        <li class="category-list_item">
+                            <a href="">T-Shirts</a>
+                        </li>
+                        <li class="category-list_item">
+                            <a href="">Shirts</a>
+                        </li>
+                        <li class="category-list_item">
+                            <a href="">Bags</a>
+                        </li>
+                    </ul>
+                </nav>
             </header>
-            <main class="page-container"></main>
+            <main class="page-container">
+                <section class="page-top"></section>
+            </main>
         </div>
         <footer></footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+        <script>
+            $(".menu-btn, .close-btn").click(function () {
+                $(".main-menu").toggleClass("active");
+            });
+        </script>
     </body>
 </html>
