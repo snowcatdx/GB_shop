@@ -986,6 +986,187 @@ a {
   margin-bottom: 128px;
 }
 
+/*Registration page*/
+.registration-page {
+  padding: 64px 0 96px;
+
+  &_form {
+    max-width: 360px;
+
+    .label {
+      display: block;
+      font-family: "Lato", sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 19px;
+      color: #222222;
+
+      span {
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
+
+    input:not(.radiobtn) {
+      display: block;
+      font-family: "Lato", sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 13px;
+      line-height: 16px;
+      color: #222222;
+      width: 100%;
+      background: #fff;
+      border: 1px solid #a4a4a4;
+      height: 44px;
+      padding: 13px 18px 16px 18px;
+      margin-bottom: 21px;
+
+      &::placeholder {
+        color: #b1b1b1;
+      }
+    }
+
+    input[type="password"] {
+      margin-bottom: 15px;
+    }
+
+    .checkbox-wrapper {
+      margin: 32px 0 35px;
+
+      label {
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 11px;
+        line-height: 13px;
+        color: #000000;
+        margin-right: 20px;
+      }
+
+      input[type="radio"] {
+        width: 17px;
+        height: 17px;
+        margin-right: 10px;
+      }
+    }
+
+    .note {
+      font-family: "Lato", sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 13px;
+      line-height: 16px;
+      color: #b1b1b1;
+    }
+
+    button {
+      display: block;
+      font-family: "Lato", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      color: #ffffff;
+      background: #f16d7f;
+      border: 1px solid #f16d7f;
+      height: 50px;
+      min-width: 167px;
+      padding: 16px;
+      margin-top: 40px;
+
+      .fa-solid {
+        margin-left: 20px;
+      }
+
+      &:hover {
+        animation: vibrate-1 0.3s linear infinite both;
+      }
+    }
+  }
+}
+
+@keyframes vibrate-1 {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+.benefits {
+  &_title {
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin: 0 0 22px 0;
+  }
+
+  &_text {
+    display: block;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-bottom: 21px;
+  }
+
+  &_list {
+    list-style-type: none;
+    padding: 0 0 0 43px;
+    margin: 0;
+
+    &_item {
+      display: block;
+      font-family: "Lato", sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 29px;
+      color: #000000;
+      margin-bottom: 16px;
+      position: relative;
+
+      &:before {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 100%;
+        background: url("/assets/img/elements/list-ico.svg") center center
+          no-repeat;
+        position: absolute;
+        top: 0;
+        left: -43px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .benefits {
+    margin-top: 40px;
+  }
+}
+
 /* Footer */
 .footer_main {
   display: flex;

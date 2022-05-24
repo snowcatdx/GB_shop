@@ -123,14 +123,17 @@
             </div>
 
             <div class="col-auto d-flex">
-              <div class="header__account d-flex align-items-center">
+              <a
+                href="registration.html"
+                class="header__account d-flex align-items-center"
+              >
                 <i class="fa-solid fa-user"></i>
-              </div>
+              </a>
             </div>
 
             <div class="col-auto d-flex">
               <a
-                href="../cart.html"
+                href="cart.html"
                 class="header__cart d-flex align-items-center"
               >
                 <i class="fa-solid fa-cart-shopping">
@@ -141,7 +144,7 @@
           </div>
         </div>
       </header>
-      <main class="page-container product-detail-page">
+      <main class="page-container">
         <div class="page-title-wrapper d-flex align-items-center">
           <div class="container-xl d-flex justify-content-between">
             <div class="page-title">
@@ -150,257 +153,88 @@
           </div>
         </div>
 
-        <div class="container-xl">
-          <div class="catalog-menu">
-            <div class="catalog-menu__filter">
-              <span class="title open-filter-btn">FILTER</span>
-              <ul class="catalog-menu__filter__dropdown">
-                <li class="item title">
-                  <span>CATEGORY</span>
-                </li>
-
-                <li class="item">
-                  <a href="#">Accessories</a>
-                </li>
-                <li class="item">
-                  <a href="#">Bags</a>
-                </li>
-                <li class="item">
-                  <a href="#">Denim</a>
-                </li>
-                <li class="item">
-                  <a href="#">Hoodies & Sweatshirts</a>
-                </li>
-                <li class="item">
-                  <a href="#">Jackets & Coats</a>
-                </li>
-                <li class="item">
-                  <a href="#">Polos</a>
-                </li>
-                <li class="item">
-                  <a href="#">Shirts</a>
-                </li>
-                <li class="item">
-                  <a href="#">Shoes</a>
-                </li>
-                <li class="item">
-                  <a href="#">Sweaters & Knits</a>
-                </li>
-                <li class="item">
-                  <a href="#">T-Shirts</a>
-                </li>
-                <li class="item">
-                  <a href="#">Tanks</a>
-                </li>
-
-                <li class="item title">
-                  <span>BRAND</span>
-                </li>
-
-                <li class="item title">
-                  <span>DESIGNER</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <section class="catalog-content">
+        <section class="registration-page">
           <div class="container-xl">
             <div class="row">
-              <div class="col-md-6 col-xl-4">
-                <div class="product-card">
-                  <div class="product-card_img">
-                    <div class="overlay">
-                      <button type="button" class="product-card_btn">
-                        Add to Cart
-                      </button>
-                    </div>
-                    <img
-                      src="../assets/img/content/man2.jpg"
-                      alt="Man"
-                      class="img-fluid"
+              <div class="col-md-6">
+                <form action="#" class="registration-page_form">
+                  <label class="label">
+                    <span>Your Name</span>
+                    <input
+                      type="text"
+                      placeholder="First Name"
+                      id="firstName"
+                      required
                     />
+                  </label>
+
+                  <input
+                    type="text"
+                    placeholder="Last Name"
+                    id="lastName"
+                    required
+                  />
+
+                  <div class="checkbox-wrapper d-flex align-items-center">
+                    <input
+                      type="radio"
+                      name="gender"
+                      id="genderM"
+                      checked
+                      class="radiobtn"
+                    />
+                    <label for="genderM">Male</label>
+                    <input
+                      type="radio"
+                      name="gender"
+                      id="genderF"
+                      class="radiobtn"
+                    />
+                    <label for="genderF">Female</label>
                   </div>
 
-                  <a href="catalog/detail.html" class="product-card_descr">
-                    <span class="title"> ELLERY X M'O CAPSULE </span>
-                    <p>
-                      Known for her sculptural takes on traditional tailoring,
-                      Australian arbiter of cool Kym Ellery teams up with Moda
-                      Operandi.
-                    </p>
-                    <span class="price">$52.00</span>
-                  </a>
-                </div>
+                  <label class="label">
+                    <span>Login details</span>
+                    <input type="email" placeholder="Email" required />
+                  </label>
+
+                  <input type="password" placeholder="Password" required />
+                  <span class="note">
+                    Please use 8 or more characters, with at least 1 number and
+                    a mixture of uppercase and lowercase letters
+                  </span>
+
+                  <button type="submit">
+                    JOIN NOW<i class="fa-solid fa-arrow-right-long"></i>
+                  </button>
+                </form>
               </div>
 
-              <div class="col-md-6 col-xl-4">
-                <div class="product-card">
-                  <div class="product-card_img">
-                    <div class="overlay">
-                      <button type="button" class="product-card_btn">
-                        Add to Cart
-                      </button>
-                    </div>
-                    <img
-                      src="../assets/img/content/women1.jpg"
-                      alt="Man"
-                      class="img-fluid"
-                    />
-                  </div>
+              <div class="col-md-6">
+                <div class="benefits">
+                  <h2 class="benefits_title">LOYALTY HAS ITS PERKS</h2>
+                  <span class="benefits_text">
+                    Get in on the loyalty program where you can earn points and
+                    unlock serious perks. Starting with these as soon as you
+                    join:
+                  </span>
 
-                  <a href="catalog/detail.html" class="product-card_descr">
-                    <span class="title"> ELLERY X M'O CAPSULE </span>
-                    <p>
-                      Known for her sculptural takes on traditional tailoring,
-                      Australian arbiter of cool Kym Ellery teams up with Moda
-                      Operandi.
-                    </p>
-                    <span class="price">$52.00</span>
-                  </a>
-                </div>
-              </div>
-
-              <div class="col-md-6 col-xl-4">
-                <div class="product-card">
-                  <div class="product-card_img">
-                    <div class="overlay">
-                      <button type="button" class="product-card_btn">
-                        Add to Cart
-                      </button>
-                    </div>
-                    <img
-                      src="../assets/img/content/man3.jpg"
-                      alt="Man"
-                      class="img-fluid"
-                    />
-                  </div>
-
-                  <a href="catalog/detail.html" class="product-card_descr">
-                    <span class="title"> ELLERY X M'O CAPSULE </span>
-                    <p>
-                      Known for her sculptural takes on traditional tailoring,
-                      Australian arbiter of cool Kym Ellery teams up with Moda
-                      Operandi.
-                    </p>
-                    <span class="price">$52.00</span>
-                  </a>
-                </div>
-              </div>
-
-              <div class="col-md-6 col-xl-4">
-                <div class="product-card">
-                  <div class="product-card_img">
-                    <div class="overlay">
-                      <button type="button" class="product-card_btn">
-                        Add to Cart
-                      </button>
-                    </div>
-                    <img
-                      src="../assets/img/content/man4.jpg"
-                      alt="Man"
-                      class="img-fluid"
-                    />
-                  </div>
-
-                  <a href="catalog/detail.html" class="product-card_descr">
-                    <span class="title"> ELLERY X M'O CAPSULE </span>
-                    <p>
-                      Known for her sculptural takes on traditional tailoring,
-                      Australian arbiter of cool Kym Ellery teams up with Moda
-                      Operandi.
-                    </p>
-                    <span class="price">$52.00</span>
-                  </a>
-                </div>
-              </div>
-
-              <div class="col-md-6 col-xl-4">
-                <div class="product-card">
-                  <div class="product-card_img">
-                    <div class="overlay">
-                      <button type="button" class="product-card_btn">
-                        Add to Cart
-                      </button>
-                    </div>
-                    <img
-                      src="../assets/img/content/man4.jpg"
-                      alt="Man"
-                      class="img-fluid"
-                    />
-                  </div>
-
-                  <a href="catalog/detail.html" class="product-card_descr">
-                    <span class="title"> ELLERY X M'O CAPSULE </span>
-                    <p>
-                      Known for her sculptural takes on traditional tailoring,
-                      Australian arbiter of cool Kym Ellery teams up with Moda
-                      Operandi.
-                    </p>
-                    <span class="price">$52.00</span>
-                  </a>
-                </div>
-              </div>
-
-              <div class="col-md-6 col-xl-4">
-                <div class="product-card">
-                  <div class="product-card_img">
-                    <div class="overlay">
-                      <button type="button" class="product-card_btn">
-                        Add to Cart
-                      </button>
-                    </div>
-                    <img
-                      src="../assets/img/content/women2.jpg"
-                      alt="Man"
-                      class="img-fluid"
-                    />
-                  </div>
-
-                  <a href="catalog/detail.html" class="product-card_descr">
-                    <span class="title"> ELLERY X M'O CAPSULE </span>
-                    <p>
-                      Known for her sculptural takes on traditional tailoring,
-                      Australian arbiter of cool Kym Ellery teams up with Moda
-                      Operandi.
-                    </p>
-                    <span class="price">$52.00</span>
-                  </a>
+                  <ul class="benefits_list">
+                    <li class="benefits_list_item">15% off welcome offer</li>
+                    <li class="benefits_list_item">
+                      Free shipping, returns and exchanges on all orders
+                    </li>
+                    <li class="benefits_list_item">
+                      $10 off a purchase on your birthday
+                    </li>
+                    <li class="benefits_list_item">Early access to products</li>
+                    <li class="benefits_list_item">
+                      Exclusive offers & rewards
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
-          </div>
-
-          <div class="container-xl">
-            <nav aria-label="Catalog" class="catalog-pagination">
-              <ul class="catalog-pagination__list">
-                <li class="item prev">
-                  <a href="#"><i class="fa-solid fa-chevron-left"></i></a>
-                </li>
-                <li class="item active">
-                  <a href="#">1</a>
-                </li>
-                <li class="item">
-                  <a href="#">2</a>
-                </li>
-                <li class="item">
-                  <a href="#">3</a>
-                </li>
-                <li class="item">
-                  <a href="#">4</a>
-                </li>
-                <li class="item">
-                  <a href="#">...</a>
-                </li>
-                <li class="item">
-                  <a href="#">20</a>
-                </li>
-                <li class="item next">
-                  <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
-                </li>
-              </ul>
-            </nav>
           </div>
         </section>
       </main>

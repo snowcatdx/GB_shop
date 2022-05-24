@@ -1117,6 +1117,230 @@ a:hover {
   margin-bottom: 128px;
 }
 
+/*Registration page*/
+.registration-page {
+  padding: 64px 0 96px;
+}
+
+.registration-page_form {
+  max-width: 360px;
+}
+
+.registration-page_form .label {
+  display: block;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+
+.registration-page_form .label span {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.registration-page_form input:not(.radiobtn) {
+  display: block;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #222222;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #a4a4a4;
+  height: 44px;
+  padding: 13px 18px 16px 18px;
+  margin-bottom: 21px;
+}
+
+.registration-page_form input:not(.radiobtn)::-webkit-input-placeholder {
+  color: #b1b1b1;
+}
+
+.registration-page_form input:not(.radiobtn):-ms-input-placeholder {
+  color: #b1b1b1;
+}
+
+.registration-page_form input:not(.radiobtn)::-ms-input-placeholder {
+  color: #b1b1b1;
+}
+
+.registration-page_form input:not(.radiobtn)::placeholder {
+  color: #b1b1b1;
+}
+
+.registration-page_form input[type="password"] {
+  margin-bottom: 15px;
+}
+
+.registration-page_form .checkbox-wrapper {
+  margin: 32px 0 35px;
+}
+
+.registration-page_form .checkbox-wrapper label {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #000000;
+  margin-right: 20px;
+}
+
+.registration-page_form .checkbox-wrapper input[type="radio"] {
+  width: 17px;
+  height: 17px;
+  margin-right: 10px;
+}
+
+.registration-page_form .note {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #b1b1b1;
+}
+
+.registration-page_form button {
+  display: block;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  background: #f16d7f;
+  border: 1px solid #f16d7f;
+  height: 50px;
+  min-width: 167px;
+  padding: 16px;
+  margin-top: 40px;
+}
+
+.registration-page_form button .fa-solid {
+  margin-left: 20px;
+}
+
+.registration-page_form button:hover {
+  -webkit-animation: vibrate-1 0.3s linear infinite both;
+          animation: vibrate-1 0.3s linear infinite both;
+}
+
+@-webkit-keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+.benefits_title {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin: 0 0 22px 0;
+}
+
+.benefits_text {
+  display: block;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin-bottom: 21px;
+}
+
+.benefits_list {
+  list-style-type: none;
+  padding: 0 0 0 43px;
+  margin: 0;
+}
+
+.benefits_list_item {
+  display: block;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.benefits_list_item:before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 100%;
+  background: url("/assets/img/elements/list-ico.svg") center center no-repeat;
+  position: absolute;
+  top: 0;
+  left: -43px;
+}
+
+@media (max-width: 767px) {
+  .benefits {
+    margin-top: 40px;
+  }
+}
+
 /* Footer */
 .footer_main {
   display: -webkit-box;
