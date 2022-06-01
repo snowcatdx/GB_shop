@@ -281,7 +281,7 @@ a:hover {
   color: #ffffff;
 }
 
-.accent-box_item .title > h2 {
+.accent-box_item .title > strong {
   font-weight: 700;
   font-size: 24px;
   text-align: center;
@@ -772,19 +772,19 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 35px 0 48px;
+  padding: 24px 0 32px;
+  padding-left: 38px;
   position: relative;
+  z-index: 1;
 }
 
 .catalog-menu__filter {
-  width: 100%;
-  max-width: 360px;
   background: #ffffff;
-  padding: 13px 16px 16px 16px;
+  padding-top: 16px;
   position: absolute;
-  top: 35px;
+  top: 8px;
   left: 0;
-  z-index: 100;
+  z-index: -1;
   -webkit-transition: -webkit-box-shadow 0.3s;
   transition: -webkit-box-shadow 0.3s;
   transition: box-shadow 0.3s;
@@ -801,7 +801,7 @@ a:hover {
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 0;
   line-height: 17px;
   color: #000000;
   cursor: pointer;
@@ -809,18 +809,18 @@ a:hover {
 
 .catalog-menu__filter > .title::after {
   content: "";
-  width: 15px;
-  height: 10px;
+  width: 38px;
+  height: 25px;
   background: #000;
-  -webkit-mask: url("../img/elements/ico-filter.svg") center center no-repeat;
-          mask: url("../img/elements/ico-filter.svg") center center no-repeat;
+  -webkit-mask: url("../img/elements/ico-filter.svg") center center/contain no-repeat;
+          mask: url("../img/elements/ico-filter.svg") center center/contain no-repeat;
   margin-left: 11px;
 }
 
 .catalog-menu__filter__dropdown {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 0 16px 10px 16px;
   max-height: 0;
   overflow: hidden;
   -webkit-transition: max-height 0.3s;
@@ -855,6 +855,7 @@ a:hover {
 }
 
 .catalog-menu__filter.active {
+  z-index: 100;
   -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
           box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 }
@@ -869,6 +870,23 @@ a:hover {
 
 .catalog-menu__filter.active .catalog-menu__filter__dropdown {
   max-height: 1000px;
+}
+
+.catalog-menu__select .select-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #6f6e6e;
+  margin-left: 30px;
 }
 
 .catalog-content .product-card {
@@ -1622,6 +1640,24 @@ a:hover {
   .cart-content_btn-wrapper a {
     font-size: 14px;
     padding: 0 40px;
+  }
+  .catalog-menu__filter {
+    font-size: 14px;
+    width: 100%;
+    max-width: 360px;
+    top: 35px;
+    padding: 13px 16px 16px 16px;
+  }
+  .catalog-menu__filter > .title {
+    font-size: 14px;
+  }
+  .catalog-menu__filter > .title::after {
+    width: 15px;
+    height: 10px;
+  }
+  .catalog-menu {
+    padding: 51px 0 64px;
+    padding-left: 360px;
   }
 }
 

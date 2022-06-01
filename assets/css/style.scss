@@ -235,7 +235,7 @@ a {
       color: #ffffff;
     }
 
-    > h2 {
+    > strong {
       font-weight: 700;
       font-size: 24px;
       text-align: center;
@@ -673,18 +673,18 @@ a {
 .catalog-menu {
   display: flex;
   align-items: center;
-  padding: 35px 0 48px;
+  padding: 24px 0 32px;
+  padding-left: 38px;
   position: relative;
+  z-index: 1;
 
   &__filter {
-    width: 100%;
-    max-width: 360px;
     background: #ffffff;
-    padding: 13px 16px 16px 16px;
+    padding-top: 16px;
     position: absolute;
-    top: 35px;
+    top: 8px;
     left: 0;
-    z-index: 100;
+    z-index: -1;
     transition: box-shadow 0.3s;
 
     > .title {
@@ -693,17 +693,18 @@ a {
       font-family: "Lato", sans-serif;
       font-style: normal;
       font-weight: 600;
-      font-size: 14px;
+      font-size: 0;
       line-height: 17px;
       color: #000000;
       cursor: pointer;
 
       &::after {
         content: "";
-        width: 15px;
-        height: 10px;
+        width: 38px;
+        height: 25px;
         background: #000;
-        mask: url("../img/elements/ico-filter.svg") center center no-repeat;
+        mask: url("../img/elements/ico-filter.svg") center center / contain
+          no-repeat;
         margin-left: 11px;
       }
     }
@@ -711,7 +712,7 @@ a {
     &__dropdown {
       list-style-type: none;
       margin: 0;
-      padding: 0;
+      padding: 0 16px 10px 16px;
       max-height: 0;
       overflow: hidden;
       transition: max-height 0.3s;
@@ -746,6 +747,7 @@ a {
   }
 
   &__filter.active {
+    z-index: 100;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 
     > .title {
@@ -758,6 +760,21 @@ a {
 
     .catalog-menu__filter__dropdown {
       max-height: 1000px;
+    }
+  }
+
+  &__select {
+    .select-title {
+      display: flex;
+      align-items: center;
+      font-family: "Lato", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      text-transform: uppercase;
+      color: #6f6e6e;
+      margin-left: 30px;
     }
   }
 }
@@ -1462,6 +1479,28 @@ a {
       font-size: 14px;
       padding: 0 40px;
     }
+  }
+
+  .catalog-menu__filter {
+    font-size: 14px;
+    width: 100%;
+    max-width: 360px;
+    top: 35px;
+    padding: 13px 16px 16px 16px;
+
+    > .title {
+      font-size: 14px;
+
+      &::after {
+        width: 15px;
+        height: 10px;
+      }
+    }
+  }
+
+  .catalog-menu {
+    padding: 51px 0 64px;
+    padding-left: 360px;
   }
 }
 
