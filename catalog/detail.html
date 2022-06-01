@@ -21,7 +21,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
   </head>
 
   <body>
@@ -32,7 +32,7 @@
             <div class="col-auto d-flex">
               <a href="index.html" class="header__logo">
                 <img
-                  src="assets/img/elements/logo.png"
+                  src="../assets/img/elements/logo.png"
                   alt="Company name"
                   class="img-fluid"
                 />
@@ -124,7 +124,7 @@
 
             <div class="col-auto d-flex">
               <a
-                href="registration.html"
+                href="../registration.html"
                 class="header__account d-flex align-items-center"
               >
                 <i class="fa-solid fa-user"></i>
@@ -133,7 +133,7 @@
 
             <div class="col-auto d-flex">
               <a
-                href="cart.html"
+                href="../cart.html"
                 class="header__cart d-flex align-items-center"
               >
                 <i class="fa-solid fa-cart-shopping">
@@ -144,147 +144,181 @@
           </div>
         </div>
       </header>
-      <main class="page-container cart-page">
+      <main class="page-container product-detail-page">
         <div class="page-title-wrapper d-flex align-items-center">
           <div
-            class="container-xl d-flex justify-content-center justify-content-sm-between"
+            class="container-xl d-flex flex-column flex-sm-row justify-content-between align-items-center"
           >
             <div class="page-title">
-              <h1>Shopping Cart</h1>
+              <h1>NEW ARRIVALS</h1>
             </div>
+
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">MEN</a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  NEW ARRIVALS
+                </li>
+              </ol>
+            </nav>
           </div>
         </div>
+
+        <section class="product-slider">
+          <div class="product-slider__slide">
+            <img
+              src="../assets/img/content/slider-img_1.jpg"
+              alt="Something beautiful"
+              class="img-fluid"
+            />
+          </div>
+          <div class="product-slider__slide">
+            <img
+              src="../assets/img/content/slider-img_1.jpg"
+              alt="Something brilliant"
+              class="img-fluid"
+            />
+          </div>
+          <div class="product-slider__slide">
+            <img
+              src="../assets/img/content/slider-img_1.jpg"
+              alt="Something awesome"
+              class="img-fluid"
+            />
+          </div>
+        </section>
         <div class="container-xl">
-          <div class="row">
-            <div class="col-12 col-lg-8 col-xl-7">
-              <section class="cart-content">
-                <div class="cart-content_product">
-                  <img
-                    src="assets/img/content/prod_thumb1.jpg"
-                    alt="Man T-shirt"
-                    class="img-fluid"
-                  />
-                  <i class="fa-solid fa-xmark"></i>
-                  <ul class="descr">
-                    <li class="title">
-                      <span> MANGO PEOPLE T-SHIRT </span>
-                    </li>
-                    <li class="param">
-                      <span>
-                        Price:
-                        <i class="value">$300</i>
-                      </span>
-                    </li>
-                    <li class="param">
-                      <span>
-                        Color:
-                        <i class="value">Red</i>
-                      </span>
-                    </li>
-                    <li class="param">
-                      <span>
-                        Size:
-                        <i class="value">Xl</i>
-                      </span>
-                    </li>
-                    <li class="param">
-                      <span>
-                        Quantity:
-                        <i class="value">
-                          <input type="number" value="2" min="0" />
-                        </i>
-                      </span>
-                    </li>
-                  </ul>
-                </div>
+          <section
+            class="product-details d-flex flex-column align-items-center justify-content-center"
+          >
+            <span class="product-details__cat">WOMEN COLLECTION</span>
+            <h1 class="product-details__title">MOSCHINO CHEAP AND CHIC</h1>
+            <p class="product-details__descr">
+              Compellingly actualize fully researched processes before proactive
+              outsourcing. Progressively syndicate collaborative architectures
+              before cutting-edge services. Completely visualize parallel core
+              competencies rather than exceptional portals.
+            </p>
+            <span class="product-details__price">$561</span>
 
-                <div class="cart-content_product">
-                  <img
-                    src="assets/img/content/prod_thumb2.jpg"
-                    alt="Man T-shirt"
-                    class="img-fluid"
-                  />
-                  <ul class="descr">
-                    <li class="title">
-                      <span> MANGO PEOPLE T-SHIRT </span>
-                    </li>
-                    <li class="param">
-                      <span>
-                        Price:
-                        <i class="value">$300</i>
-                      </span>
-                    </li>
-                    <li class="param">
-                      <span>
-                        Color:
-                        <i class="value">Red</i>
-                      </span>
-                    </li>
-                    <li class="param">
-                      <span>
-                        Size:
-                        <i class="value">Xl</i>
-                      </span>
-                    </li>
-                    <li class="param">
-                      <span>
-                        Quantity:
-                        <i class="value">
-                          <input type="number" value="2" min="0" />
-                        </i>
-                      </span>
-                    </li>
-                  </ul>
-                </div>
+            <div class="product-details__control-row">
+              <select name="" id="" class="color-select">
+                <option value="0" selected>CHOOSE COLOR</option>
+                <option value="1">Black</option>
+                <option value="2">White</option>
+                <option value="3">Pink</option>
+              </select>
 
-                <div
-                  class="cart-content_btn-wrapper d-flex justify-content-center justify-content-lg-between"
-                >
-                  <button type="button" id="clear_cart">
-                    CLEAR SHOPPING CART
-                  </button>
-                  <a href="#"> CONTINUE SHOPPING </a>
-                </div>
-              </section>
+              <select name="" id="" class="size-select">
+                <option value="0" selected>CHOOSE SIZE</option>
+                <option value="1">S</option>
+                <option value="2">M</option>
+                <option value="3">XXXXL</option>
+              </select>
+
+              <select name="" id="" class="qty-select">
+                <option value="0" selected>QUANTITY</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
             </div>
-            <div class="col-xl-1 d-none d-xl-block"></div>
 
-            <div class="col-12 col-lg-4">
-              <form action="#" class="cart-content_form">
-                <span class="title">SHIPPING ADRESS</span>
-                <div class="control-row">
-                  <input type="text" id="country" placeholder="Country" />
-                </div>
+            <div class="product-details__control-row">
+              <button type="button">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Add to Cart
+              </button>
+            </div>
+          </section>
 
-                <div class="control-row">
-                  <input type="text" id="State" placeholder="State" />
-                </div>
+          <section class="suggestion-product">
+            <div class="container-xl">
+              <div class="row">
+                <div class="col-sm-6 col-lg-4 mb-3 mb-sm-0">
+                  <div class="product-card">
+                    <div class="product-card_img">
+                      <div class="overlay">
+                        <button type="button" class="product-card_btn">
+                          Add to Cart
+                        </button>
+                      </div>
+                      <img
+                        src="../assets/img/content/manman5.jpg"
+                        alt="Man"
+                        class="img-fluid"
+                      />
+                    </div>
 
-                <div class="control-row">
-                  <input type="text" id="Post" placeholder="Postcode / Zip" />
-                </div>
-
-                <div class="control-row">
-                  <input type="text" id="quote" placeholder="Get a quote" />
-                </div>
-
-                <div class="checkout-box">
-                  <span class="subtotal">
-                    SUB TOTAL
-                    <i class="value">$900</i>
-                  </span>
-                  <span class="grandtotal">
-                    GRAND TOTAL
-                    <i class="value">$900</i>
-                  </span>
-
-                  <div class="control-row">
-                    <button type="submit">PROCEED TO CHECKOUT</button>
+                    <a href="detail.html" class="product-card_descr">
+                      <span class="title"> ELLERY X M'O CAPSULE </span>
+                      <p>
+                        Known for her sculptural takes on traditional tailoring,
+                        Australian arbiter of cool Kym Ellery teams up with Moda
+                        Operandi.
+                      </p>
+                      <span class="price">$52.00</span>
+                    </a>
                   </div>
                 </div>
-              </form>
+
+                <div class="col-sm-6 col-lg-4">
+                  <div class="product-card">
+                    <div class="product-card_img">
+                      <div class="overlay">
+                        <button type="button" class="product-card_btn">
+                          Add to Cart
+                        </button>
+                      </div>
+                      <img
+                        src="../assets/img/content/okey.jpg"
+                        alt="Man"
+                        class="img-fluid"
+                      />
+                    </div>
+
+                    <a href="detail.html" class="product-card_descr">
+                      <span class="title"> ELLERY X M'O CAPSULE </span>
+                      <p>
+                        Known for her sculptural takes on traditional tailoring,
+                        Australian arbiter of cool Kym Ellery teams up with Moda
+                        Operandi.
+                      </p>
+                      <span class="price">$52.00</span>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="d-none d-lg-block col-lg-4">
+                  <div class="product-card">
+                    <div class="product-card_img">
+                      <div class="overlay">
+                        <button type="button" class="product-card_btn">
+                          Add to Cart
+                        </button>
+                      </div>
+                      <img
+                        src="../assets/img/content/manman56.jpg"
+                        alt="Man"
+                        class="img-fluid"
+                      />
+                    </div>
+
+                    <a href="detail.html" class="product-card_descr">
+                      <span class="title"> ELLERY X M'O CAPSULE </span>
+                      <p>
+                        Known for her sculptural takes on traditional tailoring,
+                        Australian arbiter of cool Kym Ellery teams up with Moda
+                        Operandi.
+                      </p>
+                      <span class="price">$52.00</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
+          </section>
         </div>
       </main>
     </div>
@@ -363,6 +397,19 @@
     <script>
       $(".header__menu .fa-bars, .header__menu .close-btn").click(function () {
         $(".header__menu--hidden").toggleClass("active");
+      });
+
+      var slider = tns({
+        container: ".product-slider",
+        items: 1,
+        slideBy: "page",
+        autoplay: false,
+        nav: false,
+        gutter: 0,
+        controlsText: [
+          '<i class="fa-solid fa-angle-left"></i>',
+          '<i class="fa-solid fa-angle-right"></i>',
+        ],
       });
     </script>
   </body>

@@ -21,7 +21,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
   </head>
 
   <body>
@@ -30,9 +30,9 @@
         <div class="container-xl">
           <div class="row g-0">
             <div class="col-auto d-flex">
-              <a href="index.html" class="header__logo">
+              <a href="/" class="header__logo">
                 <img
-                  src="assets/img/elements/logo.png"
+                  src="../assets/img/elements/logo.png"
                   alt="Company name"
                   class="img-fluid"
                 />
@@ -144,148 +144,99 @@
           </div>
         </div>
       </header>
-      <main class="page-container cart-page">
+      <main class="page-container">
         <div class="page-title-wrapper d-flex align-items-center">
-          <div
-            class="container-xl d-flex justify-content-center justify-content-sm-between"
-          >
+          <div class="container-xl d-flex justify-content-between">
             <div class="page-title">
-              <h1>Shopping Cart</h1>
+              <h1>REGISTRATION</h1>
             </div>
           </div>
         </div>
-        <div class="container-xl">
-          <div class="row">
-            <div class="col-12 col-lg-8 col-xl-7">
-              <section class="cart-content">
-                <div class="cart-content_product">
-                  <img
-                    src="assets/img/content/prod_thumb1.jpg"
-                    alt="Man T-shirt"
-                    class="img-fluid"
+
+        <section class="registration-page">
+          <div class="container-xl">
+            <div class="row">
+              <div class="col-md-6">
+                <form action="#" class="registration-page_form">
+                  <label class="label">
+                    <span>Your Name</span>
+                    <input
+                      type="text"
+                      placeholder="First Name"
+                      id="firstName"
+                      required
+                    />
+                  </label>
+
+                  <input
+                    type="text"
+                    placeholder="Last Name"
+                    id="lastName"
+                    required
                   />
-                  <i class="fa-solid fa-xmark"></i>
-                  <ul class="descr">
-                    <li class="title">
-                      <span> MANGO PEOPLE T-SHIRT </span>
-                    </li>
-                    <li class="param">
-                      <span>
-                        Price:
-                        <i class="value">$300</i>
-                      </span>
-                    </li>
-                    <li class="param">
-                      <span>
-                        Color:
-                        <i class="value">Red</i>
-                      </span>
-                    </li>
-                    <li class="param">
-                      <span>
-                        Size:
-                        <i class="value">Xl</i>
-                      </span>
-                    </li>
-                    <li class="param">
-                      <span>
-                        Quantity:
-                        <i class="value">
-                          <input type="number" value="2" min="0" />
-                        </i>
-                      </span>
-                    </li>
-                  </ul>
-                </div>
 
-                <div class="cart-content_product">
-                  <img
-                    src="assets/img/content/prod_thumb2.jpg"
-                    alt="Man T-shirt"
-                    class="img-fluid"
-                  />
-                  <ul class="descr">
-                    <li class="title">
-                      <span> MANGO PEOPLE T-SHIRT </span>
-                    </li>
-                    <li class="param">
-                      <span>
-                        Price:
-                        <i class="value">$300</i>
-                      </span>
-                    </li>
-                    <li class="param">
-                      <span>
-                        Color:
-                        <i class="value">Red</i>
-                      </span>
-                    </li>
-                    <li class="param">
-                      <span>
-                        Size:
-                        <i class="value">Xl</i>
-                      </span>
-                    </li>
-                    <li class="param">
-                      <span>
-                        Quantity:
-                        <i class="value">
-                          <input type="number" value="2" min="0" />
-                        </i>
-                      </span>
-                    </li>
-                  </ul>
-                </div>
-
-                <div
-                  class="cart-content_btn-wrapper d-flex justify-content-center justify-content-lg-between"
-                >
-                  <button type="button" id="clear_cart">
-                    CLEAR SHOPPING CART
-                  </button>
-                  <a href="#"> CONTINUE SHOPPING </a>
-                </div>
-              </section>
-            </div>
-            <div class="col-xl-1 d-none d-xl-block"></div>
-
-            <div class="col-12 col-lg-4">
-              <form action="#" class="cart-content_form">
-                <span class="title">SHIPPING ADRESS</span>
-                <div class="control-row">
-                  <input type="text" id="country" placeholder="Country" />
-                </div>
-
-                <div class="control-row">
-                  <input type="text" id="State" placeholder="State" />
-                </div>
-
-                <div class="control-row">
-                  <input type="text" id="Post" placeholder="Postcode / Zip" />
-                </div>
-
-                <div class="control-row">
-                  <input type="text" id="quote" placeholder="Get a quote" />
-                </div>
-
-                <div class="checkout-box">
-                  <span class="subtotal">
-                    SUB TOTAL
-                    <i class="value">$900</i>
-                  </span>
-                  <span class="grandtotal">
-                    GRAND TOTAL
-                    <i class="value">$900</i>
-                  </span>
-
-                  <div class="control-row">
-                    <button type="submit">PROCEED TO CHECKOUT</button>
+                  <div class="checkbox-wrapper d-flex align-items-center">
+                    <input
+                      type="radio"
+                      name="gender"
+                      id="genderM"
+                      checked
+                      class="radiobtn"
+                    />
+                    <label for="genderM">Male</label>
+                    <input
+                      type="radio"
+                      name="gender"
+                      id="genderF"
+                      class="radiobtn"
+                    />
+                    <label for="genderF">Female</label>
                   </div>
+
+                  <label class="label">
+                    <span>Login details</span>
+                    <input type="email" placeholder="Email" required />
+                  </label>
+
+                  <input type="password" placeholder="Password" required />
+                  <span class="note">
+                    Please use 8 or more characters, with at least 1 number and
+                    a mixture of uppercase and lowercase letters
+                  </span>
+
+                  <button type="submit">
+                    JOIN NOW<i class="fa-solid fa-arrow-right-long"></i>
+                  </button>
+                </form>
+              </div>
+
+              <div class="col-md-6">
+                <div class="benefits">
+                  <h2 class="benefits_title">LOYALTY HAS ITS PERKS</h2>
+                  <span class="benefits_text">
+                    Get in on the loyalty program where you can earn points and
+                    unlock serious perks. Starting with these as soon as you
+                    join:
+                  </span>
+
+                  <ul class="benefits_list">
+                    <li class="benefits_list_item">15% off welcome offer</li>
+                    <li class="benefits_list_item">
+                      Free shipping, returns and exchanges on all orders
+                    </li>
+                    <li class="benefits_list_item">
+                      $10 off a purchase on your birthday
+                    </li>
+                    <li class="benefits_list_item">Early access to products</li>
+                    <li class="benefits_list_item">
+                      Exclusive offers & rewards
+                    </li>
+                  </ul>
                 </div>
-              </form>
+              </div>
             </div>
           </div>
-        </div>
+        </section>
       </main>
     </div>
     <footer class="footer">
@@ -352,15 +303,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
-    />
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 
     <script>
+      $(".open-filter-btn").click(function () {
+        $(".catalog-menu__filter").toggleClass("active");
+      });
+
       $(".header__menu .fa-bars, .header__menu .close-btn").click(function () {
         $(".header__menu--hidden").toggleClass("active");
       });
